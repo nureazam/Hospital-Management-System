@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  margin-left: 25%;
+  max-width: 1080px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+
+}
+
+
+.container:hover .overlay {
+  opacity: 1;
+}
+</style>
+</head>
+<body style="background-color:#AEB6BF">
+<div class="container">
+  <img src="pic/noor.jpg" alt="Avatar" class="image">
+  <div class="overlay">Nur-E-Azam</div>
+</div>
+<font size="6">
+<p>
+  Md.Nur-E-Azam<br>
+  ID:1512268042<br>
+  B.Sc. in Computer Science & Engineering (CSE)<br>
+  North South University<br>
+  Email:nur.azam@northsouth.edu<br>
+  Phone:01761930062<br>
+  facebook:https://www.facebook.com/profile.php?id=100008946908317<br>
+</p>
+</font>
+<br>
+<div class="container">
+  <img src="pic/badhun.jpg" alt="Avatar" class="image">
+  <div class="overlay">Badhun</div>
+</div>
+<font size="6">
+<p>
+  Md.Rakibuzzaman<br>
+  ID:1510390042<br>
+  B.Sc. in Computer Science & Engineering (CSE)<br>
+  North South University<br>
+  Email:rakib.zzaman@northsouth.edu<br>
+  Phone:01750106497<br>
+  facebook:https://www.facebook.com/rkb.bdn<br>
+  
+</p>
+</font>
+</body>
+</html>

@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+
+
+
+input[type=t], input[type=password]{
+    width: 31%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+
+input[type=t1], input[type=password]{
+    width: 27%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+
+
+input[type=te]{
+    width: 25%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+
+
+input[type=tex]{
+    width: 25%;
+    padding: 50px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+
+
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+input {
+    border: 0px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+th, td {
+    
+    text-align: left;    
+}
+
+th {
+     padding: 15px;
+    text-align: left;    
+}
+
+
+
+
+
+
+</style>
+<body style="background-image:url('pic/img777.jpg')">
+
+<h2>Medical Advise by the Specialist Form</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Specialist Form</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" method="post" action="connect/connectC.php">
+    <div class="container">
+      <h1>Medical Advise by the Specialist Form</h1>
+      <p>Please fill in this form .</p>
+      <hr>
+      <label for="Date of Admission:"><b>Date of Admission:</b></label>
+      <input type="t" placeholder="DD/MM/YYYY" name="date_of_admission" required>
+       <br>
+      <label for="First name"><b> Name:</b></label>
+      <input type="t" placeholder="First name" name="first_name" required>
+      
+       <label for="First name"><b> </b></label>
+      <input type="t" placeholder="middle name" name="middle_name" required>
+
+       <label for="First name"><b> </b></label>
+      <input type="t" placeholder="Last Name" name="last_name" required>
+
+
+       <br>
+       <label for="Date of birth"> <b> Date of birth: </b></label>
+      <input type="t1" placeholder="DD/MM/YYYY" name="date_of_birth" required>
+
+      <label for="Bed No"> <b> Bed No. </b></label>
+      <input type="t1" placeholder="Bed No" name="bed_no" required>
+
+      <label for="Ward No"> <b> Ward No. </b></label>
+      <input type="t1" placeholder="Ward No" name="ward_no" required>
+      <br>
+
+      
+      <br>
+      <label for="Date of advice"> <b>Date of advice: </b></label>
+      <input type="t" placeholder="Date of advice" name="date_of_advice" required>
+
+      <label for="Time"> <b> Time: </b></label>
+      <input type="t" placeholder="Time" name="a_time" required>
+      <br>
+
+                  
+
+                  
+      
+
+      <br>
+      <b>Medicine advice</b>
+      <br>
+      <br>
+      
+
+
+
+
+
+
+
+<table style="width:100%">
+  <tr>
+    <th >Serial Number</th>
+    <th >Name of Medicine</th>
+    <th >Quantity</th>
+    <th >Times in a day</th>
+    <th colspan="2">Morning</th>
+    <th colspan="2">Noon</th>
+    <th colspan="2">Evening</th>
+  </tr>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th>Before meal</th>
+    <th>After meal</th>
+    <th>Before meal</th>
+    <th>After meal</th>
+    <th>Before meal</th>
+    <th>After meal</th>
+   
+   
+  </tr>
+  <tr>
+    <td><input type="text" placeholder="Serial Number" class="form-control" name="serial_number_1" /></td>
+    <td><input type="text" placeholder="Name of Medicine" class="form-control" name="name_of_medicine_1" /></td>
+    <td><input type="text" placeholder="Quantity" class="form-control" name="quantity_1" /></td>
+    <td><input type="text" placeholder="Time in a day" class="form-control" name="time_in_a_day_1" /></td>
+    <td><input type="text" placeholder="Before Meal" class="form-control" name="morning_before_meal_1" /></td>
+    <td><input type="text" placeholder="After meal" class="form-control" name="morning_after_meal_1" /></td>
+    <td><input type="text" placeholder="Before meal" class="form-control" name="noon_before_meal_1" /></td>
+    <td><input type="text" placeholder="After meal" class="form-control" name="noon_after_meal_1" /></td>
+    <td><input type="text" placeholder="Before meal" class="form-control" name="evening_before_meal_1" /></td>
+    <td><input type="text" placeholder="After meal" class="form-control" name="evening_after_meal_1" /></td>
+   
+  </tr>
+    <tr>
+    <td><input type="text" placeholder="Serial Number" class="form-control" name="serial_number_2" /></td>
+    <td><input type="text" placeholder="Name of Medicine" class="form-control" name="name_of_medicine_2" /></td>
+    <td><input type="text" placeholder="Quantity" class="form-control" name="quantity_2" /></td>
+    <td><input type="text" placeholder="Time in a day" class="form-control" name="time_in_a_day_2" /></td>
+    <td><input type="text" placeholder="Before Meal" class="form-control" name="morning_before_meal_2" /></td>
+    <td><input type="text" placeholder="After meal" class="form-control" name="morning_after_meal_2" /></td>
+    <td><input type="text" placeholder="Before meal" class="form-control" name="noon_before_meal_2" /></td>
+    <td><input type="text" placeholder="After meal" class="form-control" name="noon_after_meal_2" /></td>
+    <td><input type="text" placeholder="Before meal" class="form-control" name="evening_before_meal_2" /></td>
+    <td><input type="text" placeholder="After meal" class="form-control" name="evening_after_meal_2" /></td>
+  </tr>
+   
+   
+  
+  
+  </table>
+  <br>
+  <br>
+  <br>
+   
+
+   <b>Test Advice</b>
+   <br>
+   <br>
+   <table style="width:40%">
+  <tr>
+    <th >Serial Number</th>
+    <th >Name of the test</th>
+    
+  </tr>
+  
+  <tr>
+    <td><input type="text" placeholder="Serial Number" class="form-control" name="serial_number_1_1" /></td>
+    <td><input type="text" placeholder="Name of the test" class="form-control" name="name_of_the_test_1" /></td>
+    
+  </tr>
+    <tr>
+    <td><input type="text" placeholder="Serial Number" class="form-control" name="serial_number_2_2" /></td>
+    <td><input type="text" placeholder="Name of the test" class="form-control" name="name_of_the_test_2" /></td>
+   
+   
+  </tr>
+   <tr>
+    <td><input type="text" placeholder="Serial Number" class="form-control" name="serial_number_3_3" /></td>
+    <td><input type="text" placeholder="Name of the test" class="form-control" name="name_of_the_test_3" /></td>
+   
+   
+  </tr>
+   
+   
+   
+  
+  
+</table>
+<br>    
+
+
+      
+      <br>
+      <label for="Signature with date"><b>Signature with date</b></label>
+      <input type="t" placeholder="Signature with date" name="signature_with_date" required>
+      <br>
+      <label for="Name of the doctor:"><b> Name of the doctor:</b></label>
+      <input type="t" placeholder="Name of the doctor:" name="name_of_the_doctor" required>
+      <br>
+      <label for="Designation"><b> Designation: </b></label>
+      <input type="t" placeholder="Designation" name="designation" required>
+      <br>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Register</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
